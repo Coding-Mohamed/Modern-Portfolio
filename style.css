@@ -124,6 +124,7 @@ nav ul li a {
   border-radius: 0.5rem;
   text-align: center;
   transition: background-color var(--transition), color var(--transition);
+  font-size: 1.15rem;
 }
 
 nav ul li a:hover,
@@ -199,7 +200,7 @@ h2 {
   margin: 0 0 0.5rem;
   color: var(--h4-color);
   transition: color var(--transition);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   z-index: 3;
   position: relative;
   text-align: center;
@@ -213,6 +214,12 @@ h2 {
   z-index: 2;
   position: relative;
   object-fit: cover;
+}
+
+.project:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .project::before {
@@ -547,5 +554,26 @@ small {
 
   .project-grid {
     grid-template-columns: 1fr;
+  }
+  .education-item {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 0;
+  }
+
+  footer p {
+    flex: 1;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #scrollToTopBtn {
+    position: static;
+    margin-bottom: 1rem;
   }
 }
