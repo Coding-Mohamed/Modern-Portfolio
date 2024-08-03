@@ -60,7 +60,7 @@ body {
   left: 0;
   overflow-y: auto;
   z-index: 10;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-pic-container {
@@ -76,10 +76,11 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  animation: rotate 10s linear infinite;
-  transform-style: preserve-3d;
+  /* animation: rotate 10s linear infinite;
+  transform-style: preserve-3d; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition), box-shadow var(--transition);
+  border: 0.1rem solid var(--primary-color);
 }
 
 @keyframes rotate {
@@ -170,12 +171,24 @@ h2 {
   text-align: left;
 }
 
-/* About Section */
+/* About me Section */
+
 .about-info p {
   font-size: 1rem;
-  line-height: 1.65rem;
-  margin-top: 15px;
-  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.about-info strong {
+  color: #2980b9;
+  font-size: 1.1rem;
+}
+
+mark {
+  background-color: #f1c40f;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  white-space: nowrap;
 }
 
 /* Projects Section */
@@ -517,12 +530,6 @@ footer {
 }
 
 /* Utility Classes */
-mark {
-  background-color: yellow;
-  color: black;
-  border-radius: 0.2rem;
-  font-weight: bold;
-}
 
 small {
   font-size: 0.8rem;
@@ -575,5 +582,21 @@ small {
   #scrollToTopBtn {
     position: static;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h2 small {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .about-info p {
+    font-size: 0.8rem;
   }
 }

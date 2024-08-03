@@ -25,12 +25,13 @@ function initSmoothScrolling() {
   });
 }
 
-// Profile Picture Animation
-function setRandomProfilePicRotation() {
-  const profilePic = document.querySelector(".profile-pic");
-  const randomSpeed = Math.floor(Math.random() * 10) + 5;
-  profilePic.style.animation = `rotate ${randomSpeed}s linear infinite`;
-}
+// // Profile Picture Animation
+
+// function setRandomProfilePicRotation() {
+//   const profilePic = document.querySelector(".profile-pic");
+//   const randomSpeed = Math.floor(Math.random() * 10) + 5;
+//   profilePic.style.animation = `rotate ${randomSpeed}s linear infinite`;
+// }
 
 // Modal Functionality
 function openModal(modalId) {
@@ -140,7 +141,7 @@ function initScrollReveal() {
 document.addEventListener("DOMContentLoaded", function () {
   initDarkMode();
   initSmoothScrolling();
-  setRandomProfilePicRotation();
+  // setRandomProfilePicRotation();
   initModalClosing();
   initContactForm();
   initScrollToTop();
