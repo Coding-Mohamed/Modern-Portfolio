@@ -186,7 +186,7 @@ h2 {
 
 mark {
   background-color: #f1c40f;
-  padding: 0.2rem 0.4rem;
+  padding: 0.1rem 0.4rem;
   border-radius: 3px;
   white-space: nowrap;
 }
@@ -395,6 +395,10 @@ body.dark-mode {
   --h4-color: hsl(217, 33%, 97%);
 }
 
+.dark-mode-toggle .bil {
+  color: hsl(222, 47%, 11%);
+}
+
 /* Modal Styles */
 .modal {
   display: none;
@@ -487,6 +491,10 @@ body.dark-mode {
 .thank-you-modal h2,
 .thank-you-modal p {
   color: #008000;
+}
+
+#thankYouModal {
+  border-radius: 10px;
 }
 
 /* Footer Styles */
